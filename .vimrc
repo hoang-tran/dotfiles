@@ -96,6 +96,7 @@ imap kj <Esc>
 nmap j gj
 nmap k gk
 map <Leader>bb :!bundle<cr>
+nmap <leader><leader> <C-p>
 
 cmap Q q
 cmap W w
