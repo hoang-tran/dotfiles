@@ -1,4 +1,4 @@
-let mapleader = "\<Space>"
+let mapleader = ","
 
 set nocompatible              " be iMproved, required
 filetype off                  " required
@@ -34,6 +34,8 @@ Plugin 'kchmck/vim-coffee-script'
 Plugin 'tpope/vim-repeat'
 Plugin 'tpope/vim-dispatch'
 Plugin 'christoomey/vim-tmux-runner'
+Plugin 'tpope/vim-endwise'
+Plugin 'christoomey/vim-tmux-navigator'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -50,8 +52,6 @@ set incsearch
 set number
 set ic
 set smartcase
-set cursorline
-set cursorcolumn
 " Tab
 set tabstop=2
 set shiftwidth=2
@@ -83,20 +83,20 @@ au BufWritePre *.rb :%s/\s\+$//e
 
 " personal keymappings
 nmap 0 ^
-nnoremap <leader>rr :e ~/.vimrc<CR>
+nnoremap <leader>er :e ~/.vimrc<CR>
+nnoremap <leader>et :e ~/.tmux.conf<CR>
 nnoremap <leader>nn :NERDTreeToggle<CR>
-nnoremap <leader>ss :source ~/.vimrc<CR>
+nnoremap <leader>rr :source ~/.vimrc<CR>
 nnoremap <leader>pp :PluginInstall<CR>
-nnoremap <C-s> <Esc>:w<CR>
-inoremap <C-s> <Esc>:w<CR>
-nnoremap <C-q> :q<CR>
+nnoremap <leader>s <Esc>:w<CR>
+inoremap <leader>s <Esc>:w<CR>
+nnoremap <leader>q :q<CR>
 imap jk <Esc>
 imap kj <Esc>
 " Move up and down by visible lines if current line is wrapped
 nmap j gj
 nmap k gk
 map <Leader>bb :!bundle<cr>
-nmap <leader><leader> <C-p>
 
 cmap Q q
 cmap W w
@@ -127,3 +127,6 @@ let g:ctrlp_use_caching = 0
 
 " matchit
 runtime macros/matchit.vim
+
+" automatically rebalance windows on vim resize
+autocmd VimResized * :wincmd =
