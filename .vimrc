@@ -91,6 +91,8 @@ nnoremap <leader>pp :PluginInstall<CR>
 nnoremap <leader>s <Esc>:w<CR>
 inoremap <leader>s <Esc>:w<CR>
 nnoremap <leader>q :q<CR>
+nnoremap <leader>nt :tabnew<CR>
+nnoremap <leader>ct :tabc<CR>
 imap jk <Esc>
 imap kj <Esc>
 " Move up and down by visible lines if current line is wrapped
@@ -98,8 +100,6 @@ nmap j gj
 nmap k gk
 map <Leader>bb :!bundle<cr>
 
-cmap Q q
-cmap W w
 " Open new split panes to right and bottom, which feels more natural
 set splitbelow
 set splitright
