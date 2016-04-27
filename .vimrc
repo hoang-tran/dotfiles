@@ -52,6 +52,7 @@ set incsearch
 set number
 set ic
 set smartcase
+set t_ut=
 " Tab
 set tabstop=2
 set shiftwidth=2
