@@ -36,6 +36,7 @@ Plugin 'tpope/vim-dispatch'
 Plugin 'christoomey/vim-tmux-runner'
 Plugin 'tpope/vim-endwise'
 Plugin 'christoomey/vim-tmux-navigator'
+Plugin 'tpope/vim-unimpaired'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
