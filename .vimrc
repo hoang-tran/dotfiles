@@ -97,7 +97,6 @@ imap kj <Esc>
 " Move up and down by visible lines if current line is wrapped
 nmap j gj
 nmap k gk
-map <Leader>bb :!bundle<cr>
 
 " Open new split panes to right and bottom, which feels more natural
 set splitbelow
@@ -115,7 +114,6 @@ set grepprg=ag
 " Snippets
 let g:UltiSnipsExpandTrigger="<c-Space>"
 let g:UltiSnipsJumpForwardTrigger="<c-b>"
-let g:UltiSnipsJumpBackwardTrigger="<c-z>"
 
 " If you want :UltiSnipsEdit to split your window.
 let g:UltiSnipsEditSplit="vertical"
