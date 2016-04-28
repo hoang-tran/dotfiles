@@ -24,7 +24,6 @@ Plugin 'vim-airline/vim-airline'
 Plugin 'flazz/vim-colorschemes'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'jgdavey/vim-turbux'
-Plugin 'jgdavey/tslime.vim'
 Plugin 'tpope/vim-eunuch'
 Plugin 'tpope/vim-commentary'
 Plugin 'tpope/vim-surround'
@@ -32,11 +31,10 @@ Plugin 'SirVer/ultisnips'
 Plugin 'honza/vim-snippets'
 Plugin 'kchmck/vim-coffee-script'
 Plugin 'tpope/vim-repeat'
-Plugin 'tpope/vim-dispatch'
-Plugin 'christoomey/vim-tmux-runner'
 Plugin 'tpope/vim-endwise'
 Plugin 'christoomey/vim-tmux-navigator'
 Plugin 'tpope/vim-unimpaired'
+Plugin 'benmills/vimux'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -131,3 +129,17 @@ runtime macros/matchit.vim
 
 " automatically rebalance windows on vim resize
 autocmd VimResized * :wincmd =
+
+" Vimux settings
+let g:turbux_runner  = 'vimux'
+let g:VimuxHeight = "30"
+nnoremap <leader>vrs :VimuxRunCommand("clear; rspec")<CR>
+nnoremap <leader>vcu :VimuxRunCommand("clear; cucumber")<CR>
+nnoremap <leader>vat :VimuxRunCommand("clear; rspec && cucumber")<CR>
+nnoremap <leader>vk :VimuxRunCommand("clear")<CR>
+nnoremap <leader>vo :call VimuxOpenRunner()<CR>
+nnoremap <leader>vc :VimuxCloseRunner<CR>
+nnoremap <leader>vi :VimuxInspectRunner<CR>
+nnoremap <leader>vz :VimuxZoomRunner<CR>
+nnoremap <leader>vp :VimuxPromptCommand<CR>
+nnoremap <leader>vs :VimuxInterruptRunner<CR>
