@@ -82,8 +82,8 @@ au BufWritePre *.rb :%s/\s\+$//e
 
 " personal keymappings
 nmap 0 ^
-nnoremap <leader>er :e ~/.vimrc<CR>
-nnoremap <leader>et :e ~/.tmux.conf<CR>
+nnoremap <leader>er :tabe ~/.vimrc<CR>
+nnoremap <leader>et :tabe ~/.tmux.conf<CR>
 nnoremap <leader>nn :NERDTreeToggle<CR>
 nnoremap <leader>rr :source ~/.vimrc<CR>
 nnoremap <leader>pp :PluginInstall<CR>
