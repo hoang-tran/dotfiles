@@ -35,6 +35,7 @@ Plugin 'tpope/vim-endwise'
 Plugin 'christoomey/vim-tmux-navigator'
 Plugin 'tpope/vim-unimpaired'
 Plugin 'benmills/vimux'
+Plugin 'fatih/vim-go'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -141,3 +142,5 @@ nnoremap <leader>vi :VimuxInspectRunner<CR>
 nnoremap <leader>vz :VimuxZoomRunner<CR>
 nnoremap <leader>vp :VimuxPromptCommand<CR>
 nnoremap <leader>vs :VimuxInterruptRunner<CR>
+"Golang
+nnoremap <leader>gr :<C-U>w \| VimuxRunCommand("go run " . expand('%'))<CR>
