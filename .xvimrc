@@ -1,0 +1,41 @@
+" no status bar
+set laststatus=2
+
+" proper search
+set hlsearch
+set incsearch
+set ignorecase
+set smartcase
+set wrap
+set wrapscan
+set gdefault
+
+imap jk <Esc>:w<CR>
+imap kj <Esc>:w<CR>
+nnoremap ,s <Esc>:w<CR>
+inoremap ,s <Esc>:w<CR>
+nnoremap ,q :q<CR>
+nnoremap gf gd
+" no bells
+set noerrorbells
+
+" use system pasteboard
+set pasteboard
+
+" move between assistant editors
+nnoremap <C-j> <C-w>j
+nnoremap <C-k> <C-w>k
+nnoremap <C-l> <C-w>l
+nnoremap <C-h> <C-w>h
+
+" quick open
+nnoremap <C-p> :xccmd openQuickly<cr>
+
+" comments
+nnoremap gcc :xccmd commentAndUncommentCurrentLines<cr>
+vnoremap gc  :xccmd commentAndUncommentCurrentLines<cr>
+
+" new tab
+nnoremap ,nt :xccmd newTab<cr>
+nnoremap gT :xccmd selectPreviousTab<cr>
+nnoremap gt :xccmd selectNextTab<cr>
