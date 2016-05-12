@@ -69,9 +69,6 @@ set shiftround " When at 3 spaces and I hit >>, go to 4, not 5.
 set noesckeys
 set ttimeout
 set ttimeoutlen=1
-" Let's be reasonable, shall we?
-nmap k gk
-nmap j gj
 " Don't wait so long for the next keypress (particularly in ambigious Leader
 " situations.
 set timeoutlen=500
