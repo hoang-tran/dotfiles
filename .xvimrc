@@ -15,7 +15,9 @@ imap kj <Esc>:w<CR>
 nnoremap ,s <Esc>:w<CR>
 inoremap ,s <Esc>:w<CR>
 nnoremap ,q :q<CR>
-nnoremap gf gd
+nnoremap <C-i> gd
+nnoremap <C-o> <C-t>
+
 " no bells
 set noerrorbells
 
