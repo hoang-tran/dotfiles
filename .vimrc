@@ -37,6 +37,7 @@ Plugin 'tpope/vim-unimpaired'
 Plugin 'benmills/vimux'
 Plugin 'fatih/vim-go'
 Plugin 'jiangmiao/auto-pairs'
+Plugin 'terryma/vim-multiple-cursors'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -55,6 +56,9 @@ set ic
 set smartcase
 set t_ut=
 set backspace=2
+set so=10
+set wildmenu
+set wildignore=*.o,*~,*.pyc
 " Tab
 set tabstop=2
 set shiftwidth=2
@@ -98,6 +102,21 @@ imap kj <Esc>:w<CR>
 " Move up and down by visible lines if current line is wrapped
 nmap j gj
 nmap k gk
+
+" No annoying sound on errors
+set noerrorbells
+set novisualbell
+set t_vb=
+set tm=500
+
+set ai "Auto indent
+set si "Smart indent
+set wrap "Wrap lines
+
+" Turn backup off, since most stuff is in SVN, git et.c anyway...
+set nobackup
+set nowb
+set noswapfile
 
 " Open new split panes to right and bottom, which feels more natural
 set splitbelow
