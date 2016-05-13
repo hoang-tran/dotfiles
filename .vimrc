@@ -54,6 +54,7 @@ set number
 set ic
 set smartcase
 set t_ut=
+set backspace=2
 " Tab
 set tabstop=2
 set shiftwidth=2
