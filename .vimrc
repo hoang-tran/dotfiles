@@ -93,8 +93,8 @@ inoremap <leader>s <Esc>:w<CR>
 nnoremap <leader>q :q<CR>
 nnoremap <leader>nt :tabnew<CR>
 nnoremap <leader>ct :tabc<CR>
-imap jk <Esc>
-imap kj <Esc>
+imap jk <Esc>:w<CR>
+imap kj <Esc>:w<CR>
 " Move up and down by visible lines if current line is wrapped
 nmap j gj
 nmap k gk
