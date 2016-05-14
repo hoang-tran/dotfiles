@@ -23,22 +23,15 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'vim-airline/vim-airline'
 Plugin 'flazz/vim-colorschemes'
 Plugin 'Valloric/YouCompleteMe'
-Plugin 'jgdavey/vim-turbux'
 Plugin 'tpope/vim-eunuch'
 Plugin 'tpope/vim-commentary'
 Plugin 'tpope/vim-surround'
-Plugin 'SirVer/ultisnips'
-Plugin 'honza/vim-snippets'
 Plugin 'kchmck/vim-coffee-script'
 Plugin 'tpope/vim-repeat'
 Plugin 'tpope/vim-endwise'
-Plugin 'christoomey/vim-tmux-navigator'
 Plugin 'tpope/vim-unimpaired'
-Plugin 'benmills/vimux'
-Plugin 'fatih/vim-go'
 Plugin 'jiangmiao/auto-pairs'
 Plugin 'terryma/vim-multiple-cursors'
-Plugin 'tpope/vim-fugitive'
 Plugin 'airblade/vim-gitgutter'
 
 " All of your Plugins must be added before the following line
@@ -104,19 +97,11 @@ nnoremap <leader>pp :PluginInstall<CR>
 nnoremap <leader>s <Esc>:w<CR>
 inoremap <leader>s <Esc>:w<CR>
 nnoremap <leader>q :q<CR>
-nnoremap <leader>nt :tabnew<CR>
-nnoremap <leader>ct :tabc<CR>
 imap jk <Esc>:w<CR>
 imap kj <Esc>:w<CR>
 " Move up and down by visible lines if current line is wrapped
 nmap j gj
 nmap k gk
-
-" No annoying sound on errors
-set noerrorbells
-set novisualbell
-set t_vb=
-set tm=500
 
 set ai "Auto indent
 set si "Smart indent
@@ -140,13 +125,6 @@ let g:ag_working_path_mode="r"
 " Use Silver Searcher instead of grep
 set grepprg=ag
 
-" Snippets
-let g:UltiSnipsExpandTrigger="<c-Space>"
-let g:UltiSnipsJumpForwardTrigger="<c-b>"
-
-" If you want :UltiSnipsEdit to split your window.
-let g:UltiSnipsEditSplit="vertical"
-
 " Make CtrlP use ag for listing the files. Way faster and no useless files.
 let g:ctrlp_user_command = 'ag %s -l --hidden --nocolor -g ""'
 let g:ctrlp_use_caching = 0
@@ -156,19 +134,3 @@ runtime macros/matchit.vim
 
 " automatically rebalance windows on vim resize
 autocmd VimResized * :wincmd =
-
-" Vimux settings
-let g:turbux_runner  = 'vimux'
-let g:VimuxHeight = "30"
-nnoremap <leader>vrs :VimuxRunCommand("clear; rspec")<CR>
-nnoremap <leader>vcu :VimuxRunCommand("clear; cucumber")<CR>
-nnoremap <leader>vat :VimuxRunCommand("clear; rspec && cucumber")<CR>
-nnoremap <leader>vk :VimuxRunCommand("clear")<CR>
-nnoremap <leader>vo :call VimuxOpenRunner()<CR>
-nnoremap <leader>vc :VimuxCloseRunner<CR>
-nnoremap <leader>vi :VimuxInspectRunner<CR>
-nnoremap <leader>vz :VimuxZoomRunner<CR>
-nnoremap <leader>vp :VimuxPromptCommand<CR>
-nnoremap <leader>vs :VimuxInterruptRunner<CR>
-"Golang
-nnoremap <leader>gr :<C-U>w \| VimuxRunCommand("go run " . expand('%'))<CR>
