@@ -49,7 +49,14 @@ filetype plugin on
 
 " Put your non-Plugin stuff after this line
 syntax on
-colorscheme Tomorrow-Night-Eighties
+colorscheme spacegray
+
+" Config UI for MacVim
+set guifont=Menlo\ Regular:h13
+set guioptions-=r
+set guioptions-=R
+set guioptions-=l
+set guioptions-=L
 
 set hlsearch
 set incsearch
