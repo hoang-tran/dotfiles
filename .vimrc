@@ -45,7 +45,7 @@ syntax on
 colorscheme spacegray
 
 " Config UI for MacVim
-set guifont=Menlo\ Regular:h13
+set guifont=Source\ Code\ Pro\ Light:h16
 
 set hlsearch
 set incsearch
