@@ -46,10 +46,6 @@ colorscheme spacegray
 
 " Config UI for MacVim
 set guifont=Menlo\ Regular:h13
-set guioptions-=r
-set guioptions-=R
-set guioptions-=l
-set guioptions-=L
 
 set hlsearch
 set incsearch
