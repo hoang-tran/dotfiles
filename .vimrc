@@ -93,11 +93,9 @@ nnoremap <leader>et :tabe ~/.tmux.conf<CR>
 nnoremap <leader>nn :NERDTreeToggle<CR>
 nnoremap <leader>rr :source ~/.vimrc<CR>
 nnoremap <leader>pp :PluginInstall<CR>
-nnoremap <leader>s <Esc>:w<CR>
-inoremap <leader>s <Esc>:w<CR>
 nnoremap <leader>q :q<CR>
-imap jk <Esc>:w<CR>
-imap kj <Esc>:w<CR>
+imap jk <Esc>
+imap kj <Esc>
 " Move up and down by visible lines if current line is wrapped
 nmap j gj
 nmap k gk
