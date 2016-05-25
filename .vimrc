@@ -47,6 +47,8 @@ Plugin 'christoomey/vim-tmux-navigator'
 Plugin 'OmniSharp/omnisharp-vim'
 Plugin 'honza/vim-snippets'
 Plugin 'SirVer/ultisnips'
+Plugin 'keith/swift.vim'
+Plugin 'gfontenot/vim-xcode'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -86,6 +88,9 @@ set expandtab
 set laststatus=2  " Always display the status line
 " CtrlP
 set runtimepath^=~/.vim/bundle/ctrlp.vim
+
+" easytags
+let g:easytags_languages = {'swift': {}}
 
 " share clipboard
 set clipboard=unnamed
