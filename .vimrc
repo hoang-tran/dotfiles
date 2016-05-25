@@ -96,6 +96,10 @@ nnoremap <leader>nn :NERDTreeToggle<CR>
 nnoremap <leader>rr :source ~/.vimrc<CR>
 nnoremap <leader>pp :PluginInstall<CR>
 nnoremap <leader>q :q<CR>
+vnoremap <Space> =
+nnoremap <Space> ==
+nnoremap > >>
+nnoremap < <<
 imap jk <Esc>
 imap kj <Esc>
 
