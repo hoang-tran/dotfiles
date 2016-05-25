@@ -36,6 +36,8 @@ Plugin 'airblade/vim-gitgutter'
 Plugin 'slim-template/vim-slim'
 Plugin 'xolox/vim-misc'
 Plugin 'xolox/vim-easytags'
+Plugin 'godlygeek/tabular'
+Plugin 'plasticboy/vim-markdown'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -96,6 +98,11 @@ nnoremap <leader>pp :PluginInstall<CR>
 nnoremap <leader>q :q<CR>
 imap jk <Esc>
 imap kj <Esc>
+
+" markdown settings
+let g:vim_markdown_no_default_key_mappings = 1
+let g:vim_markdown_folding_disabled = 1
+
 " Move up and down by visible lines if current line is wrapped
 nmap j gj
 nmap k gk
