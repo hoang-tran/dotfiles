@@ -48,7 +48,7 @@ filetype plugin on
 
 " Put your non-Plugin stuff after this line
 syntax on
-colorscheme spacegray
+colorscheme Tomorrow-Night-Eighties
 
 " Config UI for MacVim
 set guifont=Source\ Code\ Pro\ Light:h16
