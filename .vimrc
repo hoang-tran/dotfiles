@@ -103,10 +103,7 @@ nnoremap <leader>q :q<CR>
 nnoremap <leader>s :w<CR>
 vnoremap <Space> =
 nnoremap <Space> ==
-nnoremap > >>
-nnoremap < <<
 imap jk <Esc>
-imap kj <Esc>
 
 " markdown settings
 let g:vim_markdown_no_default_key_mappings = 1
