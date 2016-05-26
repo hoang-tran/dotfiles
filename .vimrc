@@ -89,8 +89,8 @@ set timeoutlen=500
 " Set the tag file search order
 set tags=./tags;
 
-" Remove trailing whitespace on save for ruby files.
-au BufWritePre *.rb :%s/\s\+$//e
+" Remove trailing whitespace on save for all files.
+au BufWritePre *.* :%s/\s\+$//e
 
 " personal keymappings
 nmap 0 ^
