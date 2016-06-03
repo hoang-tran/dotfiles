@@ -106,6 +106,7 @@ nnoremap <leader>q :q<CR>
 nnoremap <leader>s :w<CR>
 vnoremap <Space> =
 nnoremap <Space> ==
+nnoremap <leader>sa :sav %:h/
 imap jk <Esc>
 
 " markdown settings
