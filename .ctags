@@ -1,6 +1,9 @@
 --tag-relative
 --exclude=.git
 --exclude=Pods
+--exclude=Libs
+--exclude=build
+--exclude=tags
 
 --langdef=objc
 --langmap=objc:.m..mm..h
