@@ -91,6 +91,11 @@ set ttimeoutlen=1
 set timeoutlen=500
 " Set the tag file search order
 set tags=./tags;
+" Undo
+if has('persistent_undo')      "check if your vim version supports it
+  set undofile                 "turn on the feature
+  set undodir=$HOME/.vim/undo  "directory where the undo files will be stored
+endif
 
 " Remove trailing whitespace on save for all files.
 au BufWritePre *.* :%s/\s\+$//e
