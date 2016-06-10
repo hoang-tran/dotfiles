@@ -9,5 +9,8 @@
   prune = true
 [alias]
 	co = checkout
+  sla = log --oneline --decorate --graph --all
   sl = log --oneline --decorate --graph -20
   s = status
+[core]
+	excludesfile = ~/.gitignore_global
