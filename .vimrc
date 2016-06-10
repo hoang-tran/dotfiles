@@ -114,6 +114,8 @@ nnoremap <Space> ==
 nnoremap <leader>sa :sav %:h/
 nnoremap <leader>fa :Ag ''<left>
 imap jk <Esc>
+" git mapping
+nnoremap <leader>g :Gstatus<CR>
 
 " markdown settings
 let g:vim_markdown_no_default_key_mappings = 1
