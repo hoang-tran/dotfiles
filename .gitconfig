@@ -1,0 +1,13 @@
+[color]
+  ui = true
+[user]
+	name = Hoang Tran
+	email = hoangtx.master@gmail.com
+[push]
+	default = upstream
+[fetch]
+  prune = true
+[alias]
+	co = checkout
+  sl = log --oneline --decorate --graph -20
+  s = status
