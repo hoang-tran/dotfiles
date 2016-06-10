@@ -12,5 +12,7 @@
   sla = log --oneline --decorate --graph --all
   sl = log --oneline --decorate --graph -20
   s = status
+  pr = pull-request
+  br = browse
 [core]
 	excludesfile = ~/.gitignore_global
