@@ -14,5 +14,8 @@
   s = status
   pr = pull-request
   br = browse
+  b = branch
+  ps = push
+  pl = pull
 [core]
 	excludesfile = ~/.gitignore_global
