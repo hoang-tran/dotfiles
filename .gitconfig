@@ -18,4 +18,5 @@
   ps = push
   pl = pull
 [core]
+  editor = vim
 	excludesfile = ~/.gitignore_global
