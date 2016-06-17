@@ -109,6 +109,7 @@ nnoremap <leader>nn :NERDTreeToggle<CR>
 nnoremap <leader>rr :source ~/.vimrc<CR>
 nnoremap <leader>pp :PluginInstall<CR>
 nnoremap <leader>q :q<CR>
+nnoremap <leader>Q :q!<CR>
 nnoremap <leader>s :w<CR>
 vnoremap <Space> =
 nnoremap <Space> ==
@@ -121,7 +122,6 @@ nnoremap <leader>g :Gstatus<CR>
 " markdown settings
 let g:vim_markdown_no_default_key_mappings = 1
 let g:vim_markdown_folding_disabled = 1
-
 
 set ai "Auto indent
 set si "Smart indent
