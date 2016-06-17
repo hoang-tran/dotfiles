@@ -65,6 +65,8 @@ set backspace=2
 set so=10
 set wildmenu
 set wildignore=*.o,*~,*.pyc
+set cursorline
+set relativenumber
 " Tab
 set tabstop=2
 set shiftwidth=2
