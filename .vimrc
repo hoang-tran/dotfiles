@@ -121,9 +121,6 @@ nnoremap <leader>g :Gstatus<CR>
 let g:vim_markdown_no_default_key_mappings = 1
 let g:vim_markdown_folding_disabled = 1
 
-" Move up and down by visible lines if current line is wrapped
-nmap j gj
-nmap k gk
 
 set ai "Auto indent
 set si "Smart indent
