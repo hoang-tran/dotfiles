@@ -62,7 +62,6 @@ set ic
 set smartcase
 set t_ut=
 set backspace=2
-set so=10
 set wildmenu
 set wildignore=*.o,*~,*.pyc
 set cursorline
