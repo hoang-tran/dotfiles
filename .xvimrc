@@ -9,6 +9,7 @@ set smartcase
 set wrap
 set wrapscan
 set gdefault
+set relativenumber
 
 imap jk <Esc>:w<CR>
 imap kj <Esc>:w<CR>
