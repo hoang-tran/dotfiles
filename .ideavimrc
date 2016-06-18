@@ -1,0 +1,61 @@
+" ---------------
+" UI
+" ---------------
+set ruler          " Ruler on
+set number         " Line numbers on
+set nowrap         " Line wrapping off
+set laststatus=2   " Always show the statusline
+set cmdheight=2    " Make the command area two lines high
+set encoding=utf-8
+set showmode     " Don't show the mode since Powerline shows it
+
+" ---------------
+" Behaviors
+" ---------------
+syntax enable
+set autoread           " Automatically reload changes if detected
+set wildmenu           " Turn on WiLd menu
+set history=1000        " Number of things to remember in history.
+set clipboard+=unnamed " Yanks go on clipboard instead.
+set autowrite          " Writes on make/shell commands
+set ttimeout
+set ttimeoutlen=100    " Time to wait for a command (after leader for example).
+
+" ---------------
+" Text Format
+" ---------------
+set tabstop=2
+set backspace=indent,eol,start " Delete everything with backspace
+set shiftwidth=2               " Tabs under smart indent
+set shiftround
+set cindent
+set autoindent
+set smarttab
+set expandtab
+set softtabstop=4              " Let backspace delete indent
+
+" ---------------
+" Searching
+" ---------------
+set ignorecase " Case insensitive search
+set smartcase  " Non-case sensitive search
+set incsearch  " Incremental search
+set hlsearch   " Highlight search results
+set wildignore+=*.o,*.obj,*.exe,*.so,*.dll,*.pyc,.svn,.hg,.bzr,.git,
+  \.sass-cache,*.class,*.scssc,*.cssc,sprockets%*,*.lessc,*/node_modules/*,
+  \rake-pipeline-*
+
+" ---------------
+" Sounds
+" ---------------
+set noerrorbells
+set novisualbell
+set t_vb=
+
+" ----------------------------------------
+" Mappings
+" ----------------------------------------
+
+" Set leader to ,
+" Note: This line MUST come before any <leader> mappings
+let mapleader=","
