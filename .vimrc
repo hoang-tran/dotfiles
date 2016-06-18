@@ -38,7 +38,6 @@ Plugin 'xolox/vim-misc'
 Plugin 'xolox/vim-easytags'
 Plugin 'godlygeek/tabular'
 Plugin 'plasticboy/vim-markdown'
-Plugin 'keith/swift.vim'
 Plugin 'Yggdroot/indentLine'
 Plugin 'tpope/vim-fugitive'
 Plugin 'takac/vim-hardtime'
@@ -75,9 +74,6 @@ set expandtab
 set laststatus=2  " Always display the status line
 " CtrlP
 set runtimepath^=~/.vim/bundle/ctrlp.vim
-
-" easytags
-let g:easytags_languages = {'swift': {}}
 
 " share clipboard
 set clipboard=unnamed
