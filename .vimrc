@@ -79,8 +79,6 @@ set runtimepath^=~/.vim/bundle/ctrlp.vim
 set clipboard=unnamed
 set autowrite
 set autoread
-set shiftround " When at 3 spaces and I hit >>, go to 4, not 5.
-" (Hopefully) removes the delay when hitting esc in insert mode
 set noesckeys
 set ttimeout
 set ttimeoutlen=1
