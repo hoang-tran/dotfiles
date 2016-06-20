@@ -14,6 +14,7 @@ set relativenumber
 imap jk <Esc>:w<CR>
 nnoremap ,s <Esc>:w<CR>
 nnoremap ,q :q<CR>
+nnoremap ,p :source ~/.xvimrc<CR>
 
 " no bells
 set noerrorbells
