@@ -18,6 +18,9 @@ nnoremap ,q :q<CR>
 " no bells
 set noerrorbells
 
+" Whitespace removal
+nmap :w<CR> :%s/^\s+$//g<CR>:w<CR>
+
 " use system pasteboard
 set pasteboard
 
