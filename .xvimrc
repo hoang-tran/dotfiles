@@ -12,27 +12,14 @@ set gdefault
 set relativenumber
 
 imap jk <Esc>:w<CR>
-imap kj <Esc>:w<CR>
 nnoremap ,s <Esc>:w<CR>
-inoremap ,s <Esc>:w<CR>
 nnoremap ,q :q<CR>
-nnoremap <C-i> gd
-nnoremap <C-o> <C-t>
 
 " no bells
 set noerrorbells
 
 " use system pasteboard
 set pasteboard
-
-" move between assistant editors
-nnoremap <C-j> <C-w>j
-nnoremap <C-k> <C-w>k
-nnoremap <C-l> <C-w>l
-nnoremap <C-h> <C-w>h
-
-" quick open
-nnoremap <C-p> :xccmd openQuickly<cr>
 
 " comments
 nnoremap gcc :xccmd commentAndUncommentCurrentLines<cr>
