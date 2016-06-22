@@ -17,6 +17,7 @@
   b = branch
   ps = push
   pl = pull
+  p = push origin HEAD
 [core]
   editor = vim
 	excludesfile = ~/.gitignore_global
