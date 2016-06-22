@@ -48,10 +48,15 @@ filetype plugin indent on    " required
 " To ignore plugin indent changes, instead use:
 filetype plugin on
 
-" Put your non-Plugin stuff after this line
+" color scheme
 syntax on
-set background=dark
-colorscheme solarized
+if has('nvim')
+  set background=dark
+  colorscheme solarized
+else
+  colorscheme Tomorrow-Night-Eighties
+endif
+
 
 " Config UI for MacVim
 set guifont=Source\ Code\ Pro\ Light:h16
