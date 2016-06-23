@@ -40,6 +40,10 @@ Plugin 'godlygeek/tabular'
 Plugin 'plasticboy/vim-markdown'
 Plugin 'Yggdroot/indentLine'
 Plugin 'tpope/vim-fugitive'
+Plugin 'tpope/vim-dispatch'
+Plugin 'benmills/vimux'
+Plugin 'jgdavey/vim-turbux'
+Plugin 'christoomey/vim-tmux-navigator'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -156,3 +160,13 @@ runtime macros/matchit.vim
 autocmd VimResized * :wincmd =
 " indentLine on by default
 let g:indentLine_enabled = 1
+" vimux config
+let g:VimuxOrientation = "h"
+let g:VimuxHeight = "40"
+let g:turbux_runner  = 'vimux'
+let g:turbux_command_rspec  = 'zeus rspec'
+let g:no_turbux_mappings = 1
+map <leader>t <Plug>SendTestToTmux
+map <leader>T <Plug>SendFocusedTestToTmux
+map <leader>vo :VimuxRunCommand('cd .')<CR>
+map <leader>vc :VimuxCloseRunner<CR>
