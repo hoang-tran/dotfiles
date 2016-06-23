@@ -154,5 +154,5 @@ runtime macros/matchit.vim
 
 " automatically rebalance windows on vim resize
 autocmd VimResized * :wincmd =
-" indentLine off by default
-let g:indentLine_enabled = 0
+" indentLine on by default
+let g:indentLine_enabled = 1
