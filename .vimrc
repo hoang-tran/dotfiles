@@ -40,7 +40,6 @@ Plugin 'godlygeek/tabular'
 Plugin 'plasticboy/vim-markdown'
 Plugin 'Yggdroot/indentLine'
 Plugin 'tpope/vim-fugitive'
-Plugin 'takac/vim-hardtime'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -157,9 +156,3 @@ runtime macros/matchit.vim
 autocmd VimResized * :wincmd =
 " indentLine off by default
 let g:indentLine_enabled = 0
-" hardtime config
-let g:hardtime_default_on = 1
-let g:hardtime_showmsg = 1
-let g:hardtime_ignore_buffer_patterns = [ "NERD.*" ]
-let g:hardtime_ignore_quickfix = 1
-let g:hardtime_allow_different_key = 1
