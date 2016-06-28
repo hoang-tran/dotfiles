@@ -179,3 +179,5 @@ let g:UltiSnipsJumpForwardTrigger="<c-j>"
 let g:UltiSnipsJumpBackwardTrigger="<c-k>"
 let g:UltiSnipsEditSplit="vertical"
 let g:UltiSnipsUsePythonVersion = 2
+let g:UltiSnipsSnippetDirectories=[$HOME.'/.vim/UltiSnips']
+nnoremap <leader>sn :UltiSnipsEdit<cr>
