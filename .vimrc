@@ -45,6 +45,8 @@ Plugin 'benmills/vimux'
 Plugin 'jgdavey/vim-turbux'
 Plugin 'christoomey/vim-tmux-navigator'
 Plugin 'OmniSharp/omnisharp-vim'
+Plugin 'honza/vim-snippets'
+Plugin 'SirVer/ultisnips'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -171,3 +173,9 @@ map <leader>t <Plug>SendTestToTmux
 map <leader>T <Plug>SendFocusedTestToTmux
 map <leader>vo :VimuxRunCommand('cd .')<CR>
 map <leader>vc :VimuxCloseRunner<CR>
+" snippets
+let g:UltiSnipsExpandTrigger="<c-space>"
+let g:UltiSnipsJumpForwardTrigger="<c-j>"
+let g:UltiSnipsJumpBackwardTrigger="<c-k>"
+let g:UltiSnipsEditSplit="vertical"
+let g:UltiSnipsUsePythonVersion = 2
