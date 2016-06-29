@@ -181,3 +181,7 @@ let g:UltiSnipsEditSplit="vertical"
 let g:UltiSnipsUsePythonVersion = 2
 let g:UltiSnipsSnippetDirectories=[$HOME.'/.vim/UltiSnips']
 nnoremap <leader>sn :UltiSnipsEdit<cr>
+" airline
+let g:airline_section_b = ''
+let g:airline_section_y = ''
+let g:airline_detect_modified=1
