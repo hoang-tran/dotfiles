@@ -190,3 +190,11 @@ nnoremap <leader>sn :UltiSnipsEdit<cr>
 let g:airline_section_b = ''
 let g:airline_section_y = ''
 let g:airline_detect_modified=1
+" xcode
+let g:xcode_runner_command = "VimuxRunCommand('{cmd}')"
+let g:xcode_xcpretty_flags = '-s --color'
+map <leader>ar :Xrun<CR>
+map <leader>ab :Xbuild<CR>
+map <leader>ac :Xclean<CR>
+map <leader>ao :Xopen %<CR>
+map <leader>at :Xtest<CR>
