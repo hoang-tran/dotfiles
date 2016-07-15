@@ -78,8 +78,10 @@ set t_ut=
 set backspace=2
 set wildmenu
 set wildignore=*.o,*~,*.pyc
-set cursorline
+set nocursorline
+set nocursorcolumn
 set relativenumber
+syntax sync minlines=256
 " Tab
 set tabstop=2
 set shiftwidth=2
