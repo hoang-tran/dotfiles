@@ -15,9 +15,14 @@
   pr = pull-request
   br = browse
   b = branch
-  ps = push
-  pl = pull
   p = push origin HEAD
+  f = fetch
+  m = merge
+  rb = rebase
+  rbc = rebase --continue
+  st = stash
+  stp = stash pop
+  c = commit
 [core]
-  editor = vim
+  editor = nvim
 	excludesfile = ~/.gitignore_global
