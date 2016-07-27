@@ -58,12 +58,7 @@ filetype plugin on
 
 " color scheme
 syntax on
-if has('nvim')
-  set background=dark
-  colorscheme solarized
-else
-  colorscheme Tomorrow-Night-Eighties
-endif
+colorscheme Tomorrow-Night-Eighties
 
 
 " Config UI for MacVim
