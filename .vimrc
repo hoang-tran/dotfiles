@@ -130,6 +130,7 @@ nnoremap <leader>r* :%s/<C-r><C-w>//ge<left><left><left>
 nnoremap <leader>ag :arg *.
 nnoremap <leader>aa :arg *.*<CR>
 nnoremap <leader>ra :argdo %s//ge \| update<left><left><left><left><left><left><left><left><left><left><left><left>
+nnoremap <leader>ct :! ctags -R .<CR>
 nmap Y y$
 imap jk <Esc>
 " git mapping
