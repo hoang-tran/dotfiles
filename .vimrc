@@ -133,6 +133,7 @@ nnoremap <leader>re :%s//ge<left><left><left>
 nnoremap <leader>ag :arg *.
 nnoremap <leader>aa :arg *.*<CR>
 nnoremap <leader>ra :argdo %s//ge \| update<left><left><left><left><left><left><left><left><left><left><left><left>
+nmap Y y$
 imap jk <Esc>
 " git mapping
 nnoremap <leader>g :Gstatus<CR>
