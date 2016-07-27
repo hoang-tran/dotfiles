@@ -1,7 +1,6 @@
 #!/usr/bin/env bash
 
 FILES=(\
-    UltiSnips \
     .agignore \
     .ctags \
     .gitconfig \
