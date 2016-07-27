@@ -129,6 +129,10 @@ vnoremap <Space> =
 nnoremap <Space> ==
 nnoremap <leader>sa :sav %:h/
 nnoremap <leader>fa :Ag ''<left>
+nnoremap <leader>re :%s//ge<left><left><left>
+nnoremap <leader>ag :arg *.
+nnoremap <leader>aa :arg *.*<CR>
+nnoremap <leader>ra :argdo %s//ge \| update<left><left><left><left><left><left><left><left><left><left><left><left>
 imap jk <Esc>
 " git mapping
 nnoremap <leader>g :Gstatus<CR>
