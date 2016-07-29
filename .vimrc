@@ -123,8 +123,8 @@ nnoremap <leader>s :w<CR>
 vnoremap <Space> =
 nnoremap <Space> ==
 nnoremap <leader>sa :sav %:h/
-nnoremap <leader>fa :Ag ''<left>
-nnoremap <leader>f* :Ag '<C-r><C-w>'<CR>
+nnoremap <leader>fa :Ag<space>
+nnoremap <leader>f* :Ag <C-r><C-w><CR>
 nnoremap <leader>re :%s//ge<left><left><left>
 nnoremap <leader>r* :%s/<C-r><C-w>//ge<left><left><left>
 nnoremap <leader>ag :arg *.
