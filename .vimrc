@@ -73,7 +73,7 @@ set t_ut=
 set backspace=2
 set wildmenu
 set wildignore=*.o,*~,*.pyc
-set nocursorline
+set cursorline
 set nocursorcolumn
 set relativenumber
 syntax sync minlines=256
