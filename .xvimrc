@@ -26,6 +26,7 @@ nmap :w<CR> :%s/^\s+$//g<CR>:w<CR>
 
 " use system pasteboard
 set pasteboard
+set clipboard=unnamed
 
 " comments
 nnoremap gcc :xccmd commentAndUncommentCurrentLines<cr>
