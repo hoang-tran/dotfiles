@@ -16,6 +16,7 @@ imap jk <Esc>:w<CR>
 nnoremap ,s <Esc>:w<CR>
 nnoremap ,q :q<CR>
 nnoremap ,p :source ~/.xvimrc<CR>
+nnoremap ,<space> :xhelp<CR>
 
 " no bells
 set noerrorbells
