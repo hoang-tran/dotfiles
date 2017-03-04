@@ -48,6 +48,8 @@ Plugin 'honza/vim-snippets'
 Plugin 'SirVer/ultisnips'
 Plugin 'keith/swift.vim'
 Plugin 'gfontenot/vim-xcode'
+Plugin 'pangloss/vim-javascript'
+Plugin 'mxw/vim-jsx'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -170,6 +172,9 @@ set grepprg=ag
 " Make CtrlP use ag for listing the files. Way faster and no useless files.
 let g:ctrlp_user_command = 'ag %s -l --hidden --nocolor -g ""'
 let g:ctrlp_use_caching = 0
+
+" Javascript
+let g:jsx_ext_required = 0
 
 " matchit
 runtime macros/matchit.vim
